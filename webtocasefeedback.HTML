@@ -1,0 +1,64 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgK000002KTmH" method="POST">
+
+<input type=hidden name="orgid" value="00DgK000002KTmH">
+<input type=hidden name="retURL" value="https://orgfarm-9bbdb23ff1-dev-ed.develop.lightning.force.com/lightning/o/Case/list?filterName=__Recent">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="prashant.verma.1rapt@outlook.com">                               -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+<label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option><option value="Mechanical">Mechanical</option>
+<option value="Electrical">Electrical</option>
+<option value="Electronic">Electronic</option>
+<option value="Structural">Structural</option>
+<option value="Other">Other</option>
+<option value="Problem">Problem</option>
+</select><br>
+
+<label for="priority">Priority</label><select  id="priority" name="priority"><option value="">--None--</option><option value="High">High</option>
+<option value="Medium">Medium</option>
+<option value="Low">Low</option>
+</select><br>
+
+<label for="company">Company</label><input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
+
+Product:<select  id="00NgK00000wIFYx" name="00NgK00000wIFYx" title="Product"><option value="">--None--</option><option value="GC1040">GC1040</option>
+<option value="GC1060">GC1060</option>
+<option value="GC3020">GC3020</option>
+<option value="GC3040">GC3040</option>
+<option value="GC3060">GC3060</option>
+<option value="GC5020">GC5020</option>
+<option value="GC5040">GC5040</option>
+<option value="GC5060">GC5060</option>
+<option value="GC1020">GC1020</option>
+</select><br>
+
+<input type="submit" name="submit">
+
+</form>
