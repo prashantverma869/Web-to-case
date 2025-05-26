@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Support - Web to Case</title>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body style="background-color: #f4f4f4; font-family: Arial, sans-serif; padding: 40px;">
+
+  <div style="max-width: 500px; margin: 0 auto; background: #fff; padding: 30px 40px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+
+    <h2 style="text-align: center; color: #1a73e8; margin-bottom: 30px;">Contact Support</h2>
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DdM00000Q78TJ" method="POST">
+
+      <input type="hidden" name="orgid" value="00DdM00000Q78TJ">
+      <input type="hidden" name="retURL" value="http://">
+
+      <!-- Debug Mode (optional) -->
+      <!--
+      <input type="hidden" name="debug" value=1>
+      <input type="hidden" name="debugEmail" value="900prashant.verma.800@gmail.com">
+      -->
+
+      <label for="name" style="display:block; margin-bottom:5px;">Full Name</label>
+      <input id="name" maxlength="80" name="name" size="20" type="text" required
+             style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 6px;" />
+
+      <label for="email" style="display:block; margin-bottom:5px;">Email</label>
+      <input id="email" maxlength="80" name="email" size="20" type="email" required
+             style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 6px;" />
+
+      <label for="phone" style="display:block; margin-bottom:5px;">Phone</label>
+      <input id="phone" maxlength="40" name="phone" size="20" type="text"
+             style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 6px;" />
+
+      <label for="subject" style="display:block; margin-bottom:5px;">Subject</label>
+      <input id="subject" maxlength="80" name="subject" size="20" type="text" required
+             style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 6px;" />
+
+      <label for="description" style="display:block; margin-bottom:5px;">Description</label>
+      <textarea name="description" rows="4" required
+                style="width: 100%; padding: 10px; margin-bottom: 30px; border: 1px solid #ccc; border-radius: 6px; resize: vertical;"></textarea>
+
+      <input type="submit" name="submit" value="Submit"
+             style="width: 100%; background-color: #1a73e8; color: white; padding: 12px; font-size: 16px; border: none; border-radius: 6px; cursor: pointer;" />
+
+    </form>
+
+  </div>
+</body>
+</html>
