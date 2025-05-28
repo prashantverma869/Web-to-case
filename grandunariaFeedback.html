@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback – Grand Unaria</title>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="font-family: Arial, sans-serif; background: #f6f8fa; padding: 20px;">
+
+  <div style="max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; color: #2c3e50;">Grand Unaria – Guest Feedback</h2>
+    <p style="text-align: center; color: #7f8c8d;">We value your feedback! Please share your experience with us.</p>
+
+    <form 
+      action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DdM00000Q78TJ" 
+      method="POST"
+      onsubmit="return validateForm();"
+    >
+      <input type="hidden" name="orgid" value="00DdM00000Q78TJ">
+      <input type="hidden" name="retURL" value="http://mail.google.com">
+
+      <label for="00NdM00000kOZRy" style="display:block; margin-top: 15px; font-weight: bold;">Booking ID</label>
+      <input id="00NdM00000kOZRy" name="00NdM00000kOZRy" maxlength="10" type="text" required 
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
+
+      <label for="subject" style="display:block; margin-top: 15px; font-weight: bold;">Subject</label>
+      <input id="subject" name="subject" maxlength="80" type="text" required 
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
+
+      <label for="00NdM00000kPvlN" style="display:block; margin-top: 15px; font-weight: bold;">Rating (1 to 5)</label>
+      <input id="00NdM00000kPvlN" name="00NdM00000kPvlN" type="number" min="1" max="5" required 
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
+
+      <label for="00NdM00000kHC1n" style="display:block; margin-top: 15px; font-weight: bold;">Feedback</label>
+      <textarea id="00NdM00000kHC1n" name="00NdM00000kHC1n" wrap="soft" required
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+      <label for="description" style="display:block; margin-top: 15px; font-weight: bold;">Description</label>
+      <textarea name="description" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+      <input type="submit" name="submit" value="Submit Feedback" 
+        style="margin-top: 20px; width: 100%; background-color: #2980b9; color: white; border: none; padding: 12px; border-radius: 5px; cursor: pointer; font-size: 16px;" />
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const rating = document.getElementById("00NdM00000kPvlN").value;
+      if (rating < 1 || rating > 5) {
+        alert("Please enter a rating between 1 and 5.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+</body>
+</html>
